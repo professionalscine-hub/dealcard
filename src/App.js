@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
@@ -602,6 +603,7 @@ export default function App() {
             }).map(d => <DealCard key={d.id} deal={d} />)}
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 }
